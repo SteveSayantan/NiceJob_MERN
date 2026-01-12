@@ -19,11 +19,9 @@ const SearchContainer=function(){
 
 
     const handleReset=(e)=>{
-        // e.preventDefault()           // As we are using type='button' attribute, we do not need this
-
-        setLocalSearch('')              // While reseting the form, we must clear search input field also
         dispatch(clearFilters());
     }
+    
     return <Wrapper>
         <form  className="form">
             <h4>search form</h4>
